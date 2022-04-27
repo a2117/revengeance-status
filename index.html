@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
    <body>
-       <video controls autoplay loop width="100%">
+       <video id="vid" width:256 loop muted>
 
-    <source src="https://a2117.github.io/revengeance-status/There_will_be_BLOOD_SHED.mp4"
+    <source  src="https://a2117.github.io/revengeance-status/There_will_be_BLOOD_SHED.mp4"
             type="video/mp4">
 
-    Sorry, your browser doesn't support embedded videos.
+    
 </video>
-      <script>
-         function setTitle() {
-            document.title = "There_will_be_BLOOD_SHED"
-         }
-         window.onload = setTitle;
-       </script>
+<script>
+    document.getElementById('vid').play();
+ 	document.getElementById("vid").removeAttribute("muted");			
+</script>
    </body>
 </html>
